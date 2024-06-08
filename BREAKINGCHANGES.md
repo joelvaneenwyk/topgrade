@@ -1,4 +1,4 @@
-1. In 13.0.0, we introduced a new feature, pushing git repos, now this feature 
+1. In 13.0.0, we introduced a new feature, pushing git repos, now this feature
    has been removed as some users are not satisfied with it.
 
    For configuration entries, the following ones are gone:

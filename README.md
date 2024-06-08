@@ -1,8 +1,12 @@
+# `Topgrade` - Upgrade Everything
+
+<!-- markdownlint-disable MD033 -->
+
 <div align="center">
   <h1>
-    <img alt="Topgrade" src="doc/topgrade_transparent.png" width="850px">
+    <img alt="Topgrade" src="doc/topgrade.svg" width="850px">
   </h1>
-  
+
   <a href="https://github.com/topgrade-rs/topgrade/releases"><img alt="GitHub Release" src="https://img.shields.io/github/release/topgrade-rs/topgrade.svg"></a>
   <a href="https://crates.io/crates/topgrade"><img alt="crates.io" src="https://img.shields.io/crates/v/topgrade.svg"></a>
   <a href="https://aur.archlinux.org/packages/topgrade"><img alt="AUR" src="https://img.shields.io/aur/version/topgrade.svg"></a>
@@ -11,10 +15,9 @@
   <img alt="Demo" src="doc/topgrade_demo.gif">
 </div>
 
-
 ## Introduction
 
-> **Note**
+> [!NOTICE]
 > This is a fork of [topgrade by r-darwish](https://github.com/r-darwish/topgrade) to keep it maintained.
 
 Keeping your system up to date usually involves invoking multiple package managers.
@@ -38,21 +41,21 @@ To remedy this, **Topgrade** detects which tools you use and runs the appropriat
 Other systems users can either use `cargo install` or the compiled binaries from the release page.
 The compiled binaries contain a self-upgrading feature.
 
-> Currently, Topgrade requires Rust 1.65 or above. In general, Topgrade tracks 
+> Currently, Topgrade requires Rust 1.65 or above. In general, Topgrade tracks
 > the latest stable toolchain.
 
 ## Usage
 
 Just run `topgrade`.
 
-## Configuration 
+## Configuration
 
 See `config.example.toml` for an example configuration file.
 
 ## Migration and Breaking Changes
 
 Whenever there is a **breaking change**, the major version number will be bumped,
-and we will document these changes in the release note, please take a look at 
+and we will document these changes in the release note, please take a look at
 it when updated to a major release.
 
 > Got a question? Feel free to open an issue or discussion!
@@ -60,6 +63,7 @@ it when updated to a major release.
 ### Configuration Path
 
 #### `CONFIG_DIR` on each platform
+
 - **Windows**: `%APPDATA%`
 - **macOS** and **other Unix systems**: `${XDG_CONFIG_HOME:-~/.config}`
 

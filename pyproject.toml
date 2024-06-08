@@ -1,16 +1,33 @@
-[build-system]
-requires = ["maturin>=1.0,<2.0"]
-build-backend = "maturin"
-
 [project]
 name = "topgrade"
-requires-python = ">=3.7"
+version = "0.1.0"
+description = "Add your description here"
+authors = [
+    { name = "Roey Darwish Dror", email = "roey.ghost@gmail.com" },
+    { name = "Thomas Schönauer", email = "t.schoenauer@hgs-wt.at" },
+]
+dependencies = []
+readme = "README.md"
+requires-python = ">= 3.8"
 classifiers = [
     "Programming Language :: Rust",
     "Programming Language :: Python :: Implementation :: CPython",
     "Programming Language :: Python :: Implementation :: PyPy",
 ]
 
+[build-system]
+requires = ["maturin>=1.0,<2.0"]
+build-backend = "maturin"
 
 [tool.maturin]
 bindings = "bin"
+
+[tool.rye]
+managed = true
+dev-dependencies = []
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/topgrade"]
